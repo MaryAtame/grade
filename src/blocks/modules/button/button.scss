@@ -1,11 +1,30 @@
 .button {
-    cursor: pointer;
-    @include r(1200) {
-       
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &--form {
+    background-color: #FFFFFF;
+    padding: rem(12);
+    width: 100%;
+    max-height: rem(40);
+    border-radius: 2px;
+    color: #273366;
+    font-size: rem(14);
+    font-weight: 400;
+    @include r(700) {
+      background-color: #32407B;
+      color: #FFFFFF;
+      font-size: rem(18);
+      order: 2;
     }
-    &--disabled {
-        
-    }
-    &__text {
-    }
+  }
+
+  &--disabled {
+
+  }
+
+  &__text {
+  }
 }

@@ -1,5 +1,35 @@
-.form {
-    @include r(1200) {
-
+form {
+  max-width: rem(450);
+  display: block;
+  position: relative;
+  z-index: 1;
+  @include r(700) {
+    order: 2;
+  }
+  span {
+    color: #FFFFFF;
+    font-size: rem(14);
+    @include r(700) {
+    color: #273366;
+      font-size: rem(16);
     }
+  }
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: rem(14);
+  row-gap: rem(14);
+  max-width: rem(450);
+  color: #848CAA;
+  margin-top: rem(20);
+  @include r(920) {
+    flex-direction: column;
+  }
+
+  &__icon {
+    width: rem(17);
+    height: rem(17);
+  }
 }

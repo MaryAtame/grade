@@ -1,14 +1,34 @@
 .input {
-    &__title {
-    }
-    &__field {
-        &::placeholder {
-        }
-    }
-    &--error {
-    }
-    &--valid {
-    }
+  display: block;
+  background-color: #32407B;
+  border-radius: 2px;
+  padding: rem(12);
+  max-height: rem(38);
+  width: 100%;
+
+  @include r(700) {
+    background-color: #F1F1FA;
+  }
+
+  &::placeholder {
+    color: #848CAA;
+    font-size: rem(12);
+  }
+
+  &--error {
+  }
+
+  &--valid {
+  }
+  &--checkbox {
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid #848CAA;
+    border-radius: 2px;
+    padding: 0;
+    width: rem(16);
+    height: rem(16);
+  }
 }
 
 @include r(1200) {

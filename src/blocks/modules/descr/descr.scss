@@ -1,0 +1,109 @@
+.descr {
+  position: relative;
+
+  &__picture {
+    display: block;
+    position: relative;
+    width: rem(501);
+    height: rem(352);
+    border-radius: 2px;
+    overflow: hidden;
+    z-index: 1;
+    @include r(920) {
+      width: 101vw;
+      left: rem(-20);
+      top: rem(-120);
+    }
+    @include r(425) {
+      height: rem(300);
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      display: block;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      width: rem(145);
+      background: rgba(39, 51, 102, 0.85);
+      z-index: 2;
+      @include r(700) {
+        width: rem(108);
+      }
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      display: block;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(39, 51, 102, 0.2);
+      z-index: 2;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-position: right;
+      object-fit: cover;
+      @include r(920) {
+        scale: 1.7;
+        object-position: 20% 50%;
+      }
+      @include r(425) {
+        object-position: -1% rem(30);
+      }
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: rem(32);
+    right: rem(15);
+    width: 100%;
+    max-width: rem(564);
+    min-height: rem(386);
+    background-color: #FFFFFF;
+    box-shadow: 0 0 50px -1px rgba(96, 107, 143, 0.16);
+    border-radius: 2px;
+    padding: rem(32);
+    z-index: 2;
+    @include r(920) {
+      position: relative;
+      top: 0;
+      right: 0;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+
+  &__list {
+    margin-top: rem(20);
+    display: flex;
+    flex-direction: column;
+    row-gap: 6px;
+  }
+
+  &__item {
+    color: #4E5677;
+    font-size: rem(14);
+    line-height: 1.5;
+    min-height: rem(24);
+    @include r(700) {
+      font-size: rem(16);
+    }
+
+    &:before {
+      content: '\2013';
+      font-weight: 700;
+      padding-right: 8px;
+    }
+  }
+}

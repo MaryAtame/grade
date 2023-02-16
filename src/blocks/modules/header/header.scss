@@ -1,0 +1,15 @@
+.header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  .menu {
+    background-color: #D9D9D9;
+    margin-top: rem(20);
+    color: #000000;
+    font-weight: 700;
+    font-size: rem(15);
+    padding: rem(4) rem(26);
+    max-height: rem(30);
+  }
+}

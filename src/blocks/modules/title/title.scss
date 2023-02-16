@@ -1,3 +1,18 @@
 .title {
-    
+  font-size: rem(32);
+  font-weight: 800;
+  line-height: 1;
+  @include r(700) {
+    font-size: rem(24);
+  }
+
+  &--white {
+    color: #ffffff;
+    @include r(700) {
+      color: #273366;
+    }
+  }
+  &--blue {
+    color: #273366;
+  }
 }

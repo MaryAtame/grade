@@ -1,3 +1,26 @@
 .section {
-    
+  position: relative;
+
+  &--decor {
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: rem(-100);
+      left: 0;
+      width: rem(820);
+      max-width: 70%;
+      height: 115%;
+      background-color: #273366;
+      @include r(920) {
+       height: 125%;
+      }
+      @include r(700) {
+        left: auto;
+        right: 0;
+        height: 30%;
+        max-width: 40%;
+      }
+    }
+  }
 }

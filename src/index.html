@@ -7,17 +7,72 @@
 </head>
 
 <body class="body">
-    <%= htmlWebpackPlugin.options.sectionHeader %>
-    <main class="main">
-        <section class="section">
-            <div class="container">
-
-
+<%= htmlWebpackPlugin.options.sectionHeader %>
+<main class="main">
+    <section class="section section--decor mb-160 mbm-80">
+        <div class="container">
+            <div class="wrapper">
+                <form class="" action="#">
+                    <h2 class="title title--white mb-5">Специалист по складской логистике</h2>
+                    <span>35 000 - 50 000 ₽</span>
+                    <div class="form">
+                        <label class="label">
+                            <p class="label__text">ФИО <span>*</span></p>
+                            <input class="input" type="text" placeholder="Укажите ФИО">
+                        </label>
+                        <label class="label">
+                            <p class="label__text">Телефон <span>*</span></p>
+                            <input class="input" type="tel" placeholder="+7 (_ _ _)  _ _ _ - _ _ - _ _">
+                        </label>
+                        <label class="label">
+                            <p class="label__text">Почта <span>*</span></p>
+                            <input class="input" type="email" placeholder="Укажите почту">
+                        </label>
+                        <label class="label">
+                            <svg class="form__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-file"></use>
+                            </svg>
+                            <p class="label__text">Прикрепить файл <span>*</span></p>
+                            <input class="input" type="file">
+                        </label>
+                        <button class="button button--form" type="button" disabled>Отправить резюме</button>
+                        <label class="label label--checkbox">
+                            <input class="input input--checkbox" type="checkbox" name="agreement" id="">
+                            <p class="label__text">Я согласен на обработку <a href="#">персональных данных</a></p>
+                        </label>
+                    </div>
+                </form>
+                <picture class="form-picture">
+                    <img src="./assets/images/form-img.jpg" alt="Декоративное изображение">
+                </picture>
             </div>
-        </section>
-    </main>
-    <%= htmlWebpackPlugin.options.sectionFooter %>
-    <%= htmlWebpackPlugin.options.temp %>
+        </div>
+        </div>
+    </section>
+    <section class="section mb-120">
+        <div class="container descr">
+            <div class="descr__content">
+                <h1 class="title title--blue">Должностные обязанности</h1>
+                <ul class="descr__list">
+                    <li class="descr__item">Организация и координация грузоперевозок</li>
+                    <li class="descr__item">Составление маршрутов транспортировки груза</li>
+                    <li class="descr__item">Прием и контроль автотранспорта</li>
+                    <li class="descr__item">Координация работы водителей</li>
+                    <li class="descr__item">Формирование расходных и приходных документов (1С)</li>
+                    <li class="descr__item">Составление маршрутов транспортировки груза</li>
+                    <li class="descr__item">Прием и контроль автотранспорта</li>
+                    <li class="descr__item">Координация работы водителей</li>
+                    <li class="descr__item">Формирование расходных и приходных документов (1С)</li>
+                </ul>
+            </div>
+            <picture class="descr__picture">
+                <img src="./assets/images/descr-img.jpg" alt="Декоративное изображение">
+            </picture>
+        </div>
+    </section>
+</main>
+<%= htmlWebpackPlugin.options.sectionFooter %>
+<%= htmlWebpackPlugin.options.temp %>
 </body>
 
 </html>

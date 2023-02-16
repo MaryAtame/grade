@@ -1,0 +1,29 @@
+.label {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 50%;
+  max-width: rem(217);
+  @include r(920) {
+    max-width: 100%;
+  }
+  &__text {
+    span {
+      color: #F05A63;
+    }
+  }
+  &--checkbox {
+    flex-direction: row;
+    align-items: center;
+    gap: rem(8);
+    flex: 1 0 100%;
+    max-width: 100%;
+    p {
+      color: #FFFFFF;
+      font-size: rem(12);
+    }
+    a {
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+  }
+}
