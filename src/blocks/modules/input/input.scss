@@ -1,0 +1,15 @@
+.input {
+    &__title {
+    }
+    &__field {
+        &::placeholder {
+        }
+    }
+    &--error {
+    }
+    &--valid {
+    }
+}
+
+@include r(1200) {
+}
