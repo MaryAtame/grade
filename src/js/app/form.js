@@ -50,20 +50,20 @@ class Form {
         return data;
     }
 
-    // disable(state) {
-    //     if (state) {
-    //         this.button.setAttribute('disabled', 'disabled');
-    //     } else {
-    //         this.button.removeAttribute('disabled');
-    //     }
-    // }
+    disable(state) {
+        if (state) {
+            this.button.setAttribute('disabled', 'disabled');
+        } else {
+            this.button.removeAttribute('disabled');
+        }
+    }
 
     setMessage(text) {
         this.field.innerText = text;
     }
 
     submit() {
-        // this.disable(true);
+        this.disable(true);
         this.setMessage('Отправка...');
 
         axios.post(this.url, this.getData())
@@ -80,7 +80,7 @@ class Form {
             .finally(() => {
                 setTimeout(() => {
                     this.setMessage('Отправить резюме');
-                    // this.disable(false);
+                    this.disable(false);
                 }, 3000);
             });
     }
