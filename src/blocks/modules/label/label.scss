@@ -7,8 +7,12 @@
     max-width: 100%;
   }
   &__text {
+    font-size: rem(11);
     span {
       color: #F05A63;
+    }
+    @include r(700) {
+      font-size: rem(14);
     }
   }
   &--checkbox {
@@ -20,10 +24,37 @@
     p {
       color: #FFFFFF;
       font-size: rem(12);
+      @include r(700) {
+        color: #4E5677;
+        font-size: rem(16);
+      }
     }
     a {
       text-decoration: underline;
       text-underline-offset: 2px;
+    }
+  }
+
+  &--file {
+    cursor: pointer;
+    flex-direction: row;
+    align-items: center;
+    gap: rem(10);
+    margin-top: rem(23);
+    p {
+      color: #FFFFFF;
+      font-size: rem(14);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: rem(200);
+      @include r(700) {
+        color: #4E5677;
+      }
+    }
+    input {
+      display: none;
+      visibility: hidden;
     }
   }
 }

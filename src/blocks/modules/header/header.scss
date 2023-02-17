@@ -11,5 +11,8 @@
     font-size: rem(15);
     padding: rem(4) rem(26);
     max-height: rem(30);
+    @include r(425) {
+      padding: rem(4);
+    }
   }
 }

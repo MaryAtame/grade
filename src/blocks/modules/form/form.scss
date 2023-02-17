@@ -1,10 +1,13 @@
 form {
   max-width: rem(450);
   display: block;
+  background-color: #273366;
+  height: fit-content;
   position: relative;
   z-index: 1;
   @include r(700) {
     order: 2;
+    background-color: #FFFFFF;
   }
   span {
     color: #FFFFFF;
@@ -31,5 +34,6 @@ form {
   &__icon {
     width: rem(17);
     height: rem(17);
+    flex-shrink: 0;
   }
 }

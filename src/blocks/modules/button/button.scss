@@ -21,10 +21,11 @@
     }
   }
 
-  &--disabled {
-
-  }
-
   &__text {
   }
+}
+
+button[disabled] {
+  pointer-events: none;
+  opacity: .7;
 }
