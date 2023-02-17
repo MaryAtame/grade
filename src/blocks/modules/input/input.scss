@@ -4,10 +4,12 @@
   border-radius: 2px;
   padding: rem(12);
   max-height: rem(38);
+  font-size: rem(12);
   width: 100%;
 
   @include r(700) {
     background-color: #F1F1FA;
+    font-size: rem(16);
   }
 
   &::placeholder {
